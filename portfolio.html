@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css"/>
+</head>
+<body>
+    <header class="page-header">
+        <div class="container page-header-container">
+            <nav class="page-header__menu">
+                <a class="page-header__home-link home-link link" href="./index.html"><span class="home-link__web">Web</span><span class="home-link__studio--header">Studio</span></a>
+                <ul class="page-header__menu-list list">
+                    <li class="page-header__menu-item">
+                        <a class="page-header__menu-link link" href="./index.html">Studio</a>
+                    </li>
+                    <li class="page-header__menu-item">
+                        <a class="page-header__menu-link link current" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="page-header__menu-item">
+                        <a class="page-header__menu-link link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="page-header__contacts list">
+                <li><a class="page-header__contacts-mail link" href="mailto:info@devstudio.com">
+                <svg class="page-header__contacts-mail-icon page-header__contacts-mail-icon--envelope">
+                    <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a></li>
+                <li><a class="page-header__contacts-phone link" href="tel:+12127724150">
+                        <svg class="page-header__contacts-phone-icon page-header__contacts-phone-icon--smartphone">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +1 212-772-4150</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="filter section">
+            <div class="container">
+            <h1 class="visually-hidden">Portfolio</h1>
+            <ul class="filter__buttons-list list">
+                <li>
+                    <button class="filter__button" type="button">All</button>
+                </li>
+                <li>
+                    <button class="filter__button" type="button">Web-site</button>
+                </li>
+                <li>
+                    <button class="filter__button" type="button">Apps</button>
+                </li>
+                <li>
+                    <button class="filter__button" type="button">Design</button>
+                </li>
+                <li>
+                    <button class="filter__button" type="button">Marketing</button>
+                </li>
+            </ul>
+            
+            <ul class="project project__list list">
+                <li class="project__card">
+                    <a class="project__card-link link" href="">
+                    <div class="project__card--image-wrapper">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio-technoduck.webp 1x, ./images/portfolio-technoduck@2x.webp 2x"
+                            media="(min-width: 1200px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/portfolio-technoduck.jpg 1x, ./images/portfolio-technoduck@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-technoduck_tablet.webp 1x, ./images/tablet-img/portfolio-technoduck_tablet@2x.webp 2x"
+                            media="(min-width: 768px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-technoduck_tablet.jpg 1x, ./images/tablet-img/portfolio-technoduck_tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-technoduck_mobile.webp 1x, ./images/mobile-img/portfolio-technoduck_mobile@2x.webp 2x"
+                            media="(max-width: 767px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-technoduck_mobile.jpg 1x, ./images/mobile-img/portfolio-technoduck_mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                            />
+                            <img src="./images/portfolio-technoduck.jpg" alt="Laptop monitor">
+                        </picture>
+                        <p class="project__card-overlay">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage
+                        and attacks on competitors' secure servers.</p>
+                    </div>
+                    <div class="project__card-section">
+                        <h2 class="project__card-title">Technoduck</h2>
+                        <p class="project__card-text">Web-site</p>
+                    </div></a>
+                </li>
+                <li class="project__card">
+                    <a class="project__card-link link" href="">
+                    <div class="project__card--image-wrapper">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio-poster-bb.webp 1x, ./images/portfolio-poster-bb@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/portfolio-poster-bb.jpg 1x, ./images/portfolio-poster-bb@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-poster-bb_tablet.webp 1x, ./images/tablet-img/portfolio-poster-bb_tablet@2x.webp 2x"
+                            media="(min-width: 768px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-poster-bb_tablet.jpg 1x, ./images/tablet-img/portfolio-poster-bb_tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-poster-bb_mobile.webp 1x, ./images/mobile-img/portfolio-poster-bb_mobile@2x.webp 2x"
+                            media="(max-width: 767px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-poster-bb_mobile.jpg 1x, ./images/mobile-img/portfolio-poster-bb_mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                            />
+                            <img src="./images/portfolio-poster-bb.jpg" alt="Basketball players">
+                        </picture>
+                        <p class="project__card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus!</p>
+                    </div>
+                    <div class="project__card-section">
+                        <h2 class="project__card-title">Poster New Orlean vs Golden Star</h2>
+                        <p class="project__card-text">Design</p>
+                    </div></a>
+                </li>
+                <li class="project__card">
+                    <a class="project__card-link link" href="">
+                    <div class="project__card--image-wrapper">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio-seafood.webp 1x, ./images/portfolio-seafood@2x.webp 2x"
+                            media="(min-width: 1200px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/portfolio-seafood.jpg 1x, ./images/portfolio-seafood@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-seafood_tablet.webp 1x, ./images/tablet-img/portfolio-seafood_tablet@2x.webp 2x"
+                            media="(min-width: 768px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-seafood_tablet.jpg 1x, ./images/tablet-img/portfolio-seafood_tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-seafood_mobile.webp 1x, ./images/mobile-img/portfolio-seafood_mobile@2x.webp 2x"
+                            media="(max-width: 767px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-seafood_mobile.jpg 1x, ./images/mobile-img/portfolio-seafood_mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                            />
+                            <img src="./images/portfolio-seafood.jpg" alt="Seafood restoran poster">
+                        </picture>
+                        <p class="project__card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus!</p>
+                    </div>
+                    <div class="project__card-section">
+                        <h2 class="project__card-title">Seafood Restaurant</h2>
+                        <p class="project__card-text">Apps</p>
+                    </div></a>
+                </li>
+                <li class="project__card">
+                    <a class="project__card-link link" href="">
+                    <div class="project__card--image-wrapper">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio-headphones.webp 1x, ./images/portfolio-headphones@2x.webp 2x"
+                            media="(min-width: 1200px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/portfolio-headphones.jpg 1x, ./images/portfolio-headphones@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-headphones_tablet.webp 1x, ./images/tablet-img/portfolio-headphones_tablet@2x.webp 2x"
+                            media="(min-width: 768px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-headphones_tablet.jpg 1x, ./images/tablet-img/portfolio-headphones_tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-headphones_mobile.webp 1x, ./images/mobile-img/portfolio-headphones_mobile@2x.webp 2x"
+                            media="(max-width: 767px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-headphones_mobile.jpg 1x, ./images/mobile-img/portfolio-headphones_mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                            />
+                            <img src="./images/portfolio-headphones.jpg" alt="Headphones">
+                        </picture>
+                        <p class="project__card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus!</p>
+                    </div>
+                    <div class="project__card-section">
+                        <h2 class="project__card-title">Project Prime</h2>
+                        <p class="project__card-text">Marketing</p>
+                    </div></a>
+                </li>
+                <li class="project__card">
+                    <a class="project__card-link link" href="">
+                    <div class="project__card--image-wrapper">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio-boxes.webp 1x, ./images/portfolio-boxes@2x.webp 2x"
+                            media="(min-width: 1200px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/portfolio-boxes.jpg 1x, ./images/portfolio-boxes@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-boxes_tablet.webp 1x, ./images/tablet-img/portfolio-boxes_tablet@2x.webp 2x"
+                            media="(min-width: 768px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-boxes_tablet.jpg 1x, ./images/tablet-img/portfolio-boxes_tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-boxes_mobile.webp 1x, ./images/mobile-img/portfolio-boxes_mobile@2x.webp 2x"
+                            media="(max-width: 767px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-boxes_mobile.jpg 1x, ./images/mobile-img/portfolio-boxes_mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                            />
+                            <img src="./images/portfolio-boxes.jpg" alt="Two boxes">
+                        </picture>
+                        <p class="project__card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus!</p>
+                    </div>
+                    <div class="project__card-section">
+                        <h2 class="project__card-title">Project Boxes</h2>
+                        <p class="project__card-text">Apps</p>
+                    </div></a>
+                </li>
+                <li class="project__card">
+                    <a class="project__card-link link" href="">
+                    <div class="project__card--image-wrapper">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio-monitor.webp 1x, ./images/portfolio-monitor@2x.webp 2x"
+                            media="(min-width: 1200px)"
+                            type="image/webp"
+                            />
+                            <source srcset="./images/portfolio-monitor.jpg 1x, ./images/portfolio-monitor@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-monitor_tablet.webp 1x, ./images/tablet-img/portfolio-monitor_tablet@2x.webp 2x"
+                            media="(min-width: 768px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-monitor_tablet.jpg 1x, ./images/tablet-img/portfolio-monitor_tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-monitor_mobile.webp 1x, ./images/mobile-img/portfolio-monitor_mobile@2x.webp 2x"
+                            media="(max-width: 767px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-monitor_mobile.jpg 1x, ./images/mobile-img/portfolio-monitor_mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                            />
+                            <img src="./images/portfolio-monitor.jpg" alt="Black monitor">
+                        </picture>
+                        <p class="project__card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus!</p>
+                    </div>
+                    <div class="project__card-section">
+                        <h2 class="project__card-title">Inspiration has no Borders</h2>
+                        <p class="project__card-text">Web-site</p>
+                    </div></a>
+                </li>
+                <li class="project__card">
+                    <a class="project__card-link link" href="">
+                    <div class="project__card--image-wrapper">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio-pages.webp 1x, ./images/portfolio-pages@2x.webp 2x"
+                            media="(min-width: 1200px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/portfolio-pages.jpg 1x, ./images/portfolio-pages@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-pages_tablet.webp 1x, ./images/tablet-img/portfolio-pages_tablet@2x.webp 2x"
+                            media="(min-width: 768px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-pages_tablet.jpg 1x, ./images/tablet-img/portfolio-pages_tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-pages_mobile.webp 1x, ./images/mobile-img/portfolio-pages_mobile@2x.webp 2x"
+                            media="(max-width: 767px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-pages_mobile.jpg 1x, ./images/mobile-img/portfolio-pages_mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                            />
+                            <img src="./images/portfolio-pages.jpg" alt="Magazine pages">
+                        </picture>
+                        <p class="project__card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus!</p>
+                    </div>
+                    <div class="project__card-section">
+                        <h2 class="project__card-title">Limited Edition</h2>
+                        <p class="project__card-text">Design</p>
+                    </div></a>
+                </li>
+                <li class="project__card">
+                    <a class="project__card-link link" href="">
+                    <div class="project__card--image-wrapper">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio-labeltag.webp 1x, ./images/portfolio-labeltag@2x.webp 2x"
+                            media="(min-width: 1200px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/portfolio-labeltag.jpg 1x, ./images/portfolio-labeltag@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-labeltag_tablet.webp 1x, ./images/tablet-img/portfolio-labeltag_tablet@2x.webp 2x"
+                            media="(min-width: 768px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-labeltag_tablet.jpg 1x, ./images/tablet-img/portfolio-labeltag_tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-labeltag_mobile.webp 1x, ./images/mobile-img/portfolio-labeltag_mobile@2x.webp 2x"
+                            media="(max-width: 767px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-labeltag_mobile.jpg 1x, ./images/mobile-img/portfolio-labeltag_mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                            />
+                            <img src="./images/portfolio-labeltag.jpg" alt="Label tag">
+                        </picture>
+                        <p class="project__card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus!</p>
+                    </div>
+                    <div class="project__card-section">
+                        <h2 class="project__card-title">Project LAB</h2>
+                        <p class="project__card-text">Marketing</p>
+                    </div></a>
+                </li>
+                <li class="project__card">
+                    <a class="project__card-link link" href="">
+                    <div class="project__card--image-wrapper">
+                        <picture>
+                            <source
+                            srcset="./images/portfolio-laptop.webp 1x, ./images/portfolio-laptop@2x.webp 2x"
+                            media="(min-width: 1200px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/portfolio-laptop.jpg 1x, ./images/portfolio-laptop@2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-laptop_tablet.webp 1x, ./images/tablet-img/portfolio-laptop_tablet@2x.webp 2x"
+                            media="(min-width: 768px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/tablet-img/portfolio-laptop_tablet.jpg 1x, ./images/tablet-img/portfolio-laptop_tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-laptop_mobile.webp 1x, ./images/mobile-img/portfolio-laptop_mobile@2x.webp 2x"
+                            media="(max-width: 767px)"
+                            type="image/webp"
+                            />
+                            <source
+                            srcset="./images/mobile-img/portfolio-laptop_mobile.jpg 1x, ./images/mobile-img/portfolio-laptop_mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                            />
+                            <img src="./images/portfolio-laptop.jpg" alt="Laptop">
+                        </picture>
+                        <p class="project__card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus!</p>
+                    </div>
+                    <div class="project__card-section">
+                        <h2 class="project__card-title">Growing Business</h2>
+                        <p class="project__card-text">Apps</p>
+                    </div></a>
+                </li>
+            </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="page-footer" id="contacts">
+        <div class="footer-container container">
+            <div class="address-footer-section">
+                <a class="home-link link" href="./index.html"><span class="home-link__web">Web</span><span class="home-link__studio--footer">Studio</span></a>
+            <address>
+                <ul class="page-footer__address-list list">
+                    <li><a class="page-footer__address-link link" href="https://goo.gl/maps/tVKiY3Z6atngq88f9"
+                        target="_blank" rel="noopener noreferrer nofollow">
+                        695 Park Ave, New York, NY 10065,<br>
+                        United States</a>
+                    </li>
+                    <li><a class="page-footer__footer-mail link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li><a class="page-footer__footer-phone link" href="tel:+12127724150">+1 212-772-4150</a></li>
+                </ul>
+            </address>
+            </div>
+            <div class="footer-social-media">
+                <p class="footer-social-media__header">Find us on</p>
+                <ul class="social-media__list footer-social-media--list list">
+                    <li class="social-media__item">
+                        <a class="social-media__link footer-social-media--link instagram link" href="">
+                            <svg class="social-media__icon footer-social-media--icon icon">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a class="social-media__link footer-social-media--link twitter link" href="">
+                            <svg class="social-media__icon footer-social-media--icon icon">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a class="social-media__link footer-social-media--link facebook link" href="">
+                            <svg class="social-media__icon footer-social-media--icon icon">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a class="social-media__link footer-social-media--link linkedin link" href="">
+                            <svg class="social-media__icon footer-social-media--icon icon">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscibe-form__wrapper">
+                <form class="subscribe-form">
+                    <p class="subscribe-form__title title">Subscribe to the newsletter</p>
+                    <div class="subscribe-form__inner-wrapper">
+                        <input class="subscribe-form__input" type="email" name="email" placeholder="E-mail" required />
+                        <button class="subscribe-form__button" type="submit">
+                            <span class=subscribe-form__button-title>Subscribe</span>
+                            <svg class="subscribe-form__button-icon">
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </footer>
+
+</body>
+</html>

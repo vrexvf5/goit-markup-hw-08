@@ -1,0 +1,207 @@
+.page-header {
+    position: relative;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid #ececec;
+    background-color: var(--main-background-color);
+}
+
+@media screen and (max-width: 767px) {
+    .page-header__menu-list {
+        display: none;
+    }
+    
+    .page-header__contacts-mail,
+    .page-header__contacts-phone {
+        display: none;
+    }
+
+    .page-header__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-menu__open-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        width: 40px;
+        height: 40px;
+        padding: 0;
+
+        background-color: transparent;
+        border: none;
+    }
+
+    .mobile-menu__open-btn-icon {
+        width: 24px;
+        height: 16px;
+        fill: #000000;
+
+        transition: fill var(--transition-dur-and-func);
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu__open-btn {
+        display: none;
+    }
+
+    .page-header {
+        padding: 0;
+    }
+
+    .page-header__home-link {
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+    
+    .page-header__container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .page-header__menu-list {
+        display: flex;
+        column-gap: 50px;
+        margin-left: 87px;
+    }
+
+    .page-header__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .page-header__menu-link {
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--headers-color);
+
+        transition: color var(--transition-dur-and-func);
+    }
+
+    .page-header__menu-link.current {
+        color: var(--accent-color)
+    }
+
+    .page-header__contacts {
+        margin-left: auto;
+    }
+    
+    .page-header__contacts-mail,
+    .page-header__contacts-phone {
+        display: block;
+    }
+
+    .page-header__contacts-mail-icon,
+    .page-header__contacts-phone-icon {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+
+    .page-header__contacts-mail-icon--envelope {
+        width: 14px;
+        height: 10px;
+    }
+
+    .page-header__contacts-phone-icon--smartphone {
+        width: 10px;
+        height: 14px;
+    }
+
+    .page-header__contacts-mail,
+    .page-header__contacts-phone {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: var(--main-text-color);
+
+        transition: color var(--transition-dur-and-func);
+    }
+
+    .page-header__contacts-mail {
+        margin-bottom: 10px;
+    }
+
+    .page-header__menu-link:hover,
+    .page-header__menu-link:focus,
+    .page-header__contacts-mail:hover,
+    .page-header__contacts-mail:focus,
+    .page-header__contacts-phone:hover,
+    .page-header__contacts-phone:focus {
+        color: var(--accent-color);
+    }
+
+    .page-header__contacts-mail-icon:hover,
+    .page-header__contacts-mail-icon:focus,
+    .page-header__contacts-phone-icon:hover,
+    .page-header__contacts-phone-icon:focus {
+        fill: var(--accent-color);
+    }
+
+    .current::after {
+        content: "";
+        position: relative;
+        top: 28px;
+        left: 0;
+        display: block;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-header__home-link {
+        margin-top: 24px;
+        margin-bottom: 25px;
+    }
+
+    .page-header__menu-list {
+        margin-left: 92px;
+    }
+
+    .page-header__contacts {
+        display: flex;
+        column-gap: 50px;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .page-header__contacts-mail,
+    .page-header__contacts-phone {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+    .page-header__contacts-mail-icon--envelope {
+        width: 16px;
+        height: 12px;
+    }
+
+    .page-header__contacts-phone-icon--smartphone {
+        width: 10px;
+        height: 16px;
+    }
+    
+    .page-header__contacts-mail {
+        margin-bottom: 0;
+    }
+
+    .current::after {
+        top: 30px;
+    }
+}

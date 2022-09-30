@@ -1,0 +1,108 @@
+.filter {
+    background-color: var(--main-background-color);
+}
+
+.filter__buttons-list {
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.filter__button {
+    padding: 6px 26px;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--headers-color);
+    background-color: var(--secondary-background-color);
+
+    transition: color var(--transition-dur-and-func),
+        background var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--white-text-color);
+        background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.project__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project__card-section {
+    padding: 20px 24px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.project__card-title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: var(--headers-color);
+}
+
+.project__card-text {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--main-text-color);
+}
+
+.project__card {
+    flex-basis: calc((100% - 60px) / 3);
+    background-color: var(--main-background-color);
+
+    transition: box-shadow var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.project__card--image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.project__card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+
+    padding-top: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transition: transform 500ms linear;
+}
+
+.project__card-link:hover .project__card-overlay,
+.project__card-link:focus .project__card-overlay {
+    transform: translateY(0%);
+}

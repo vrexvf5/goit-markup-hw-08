@@ -1,0 +1,25 @@
+.home-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+    .home-link {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.home-link__web {
+    color: var(--accent-color);
+}
+
+.home-link__studio--header {
+    color: var(--headers-color);
+}
+
+.home-link__studio--footer {
+    color: var(--white-text-color);
+}

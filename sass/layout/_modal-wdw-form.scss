@@ -1,0 +1,175 @@
+.modal-wdw-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-wdw-form__title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--headers-color);
+}
+
+.modal-wdw-form__username,
+.modal-wdw-form__userphone,
+.modal-wdw-form__usermail,
+.modal-wdw-form__comments {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--main-text-color);
+}
+
+.modal-wdw-form__userphone,
+.modal-wdw-form__usermail,
+.modal-wdw-form__comments {
+    margin-top: 10px;
+}
+
+.modal-wdw-form__input {
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    padding-left: 42px;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: border-color var(--transition-dur-and-func);
+
+    &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.modal-wdw-form__input-wrapper {
+    position: relative;
+}
+
+.modal-wdw__item-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+
+    width: 18px;
+    height: 18px;
+    fill: var(--headers-color);
+
+    cursor: pointer;
+
+    transition: fill var(--transition-dur-and-func);
+}
+
+.modal-wdw-form__input:focus+.modal-wdw__item-icon {
+    fill: var(--accent-color);
+}
+
+.modal-wdw-form__input-comments {
+    height: 120px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    resize: none;
+
+    &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.modal-wdw-form__policy {
+    display: flex;
+    align-items: baseline;
+    padding-left: 12px;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.modal-wdw-form__policy-check {
+    position: absolute;
+    appearance: none;
+}
+
+.modal-wdw-form__own-tickbox {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--headers-color);
+    border-radius: 2px;
+    background-color: var(--main-background-color);
+    cursor: pointer;
+   
+    transition: background var(--transition-dur-and-func), border-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
+}
+
+.modal-wdw-form__policy-check:focus+.modal-wdw-form__own-tickbox {
+    box-shadow: 0 0 0 1px var(--accent-color);
+}
+
+.modal-wdw-form__own-tickbox-icon {
+    width: 11px;
+    height: 8px;
+    display: none;
+    fill: var(--white-text-color);
+    
+    transition: fill var(--transition-dur-and-func);
+}
+
+.modal-wdw-form__policy-check:checked+.modal-wdw-form__own-tickbox .modal-wdw-form__own-tickbox-icon {
+    display: block;
+}
+
+.modal-wdw-form__policy-check:checked+.modal-wdw-form__own-tickbox {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    box-shadow: none;
+}
+
+.modal-wdw-form__policy-text {
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--main-text-color);
+}
+
+.modal-wdw-form__policy-link {
+    color: var(--accent-color);
+}
+
+.modal-wdw-form__submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+
+    transition: background var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        background: var(--button-hover-color);
+    }
+}

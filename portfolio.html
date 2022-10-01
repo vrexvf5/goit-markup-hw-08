@@ -13,9 +13,10 @@
 </head>
 <body>
     <header class="page-header">
-        <div class="container page-header-container">
+        <div class="container page-header__container">
             <nav class="page-header__menu">
-                <a class="page-header__home-link home-link link" href="./index.html"><span class="home-link__web">Web</span><span class="home-link__studio--header">Studio</span></a>
+                <a class="page-header__home-link home-link link" href="./index.html"><span
+                        class="home-link__web">Web</span><span class="home-link__studio--header">Studio</span></a>
                 <ul class="page-header__menu-list list">
                     <li class="page-header__menu-item">
                         <a class="page-header__menu-link link" href="./index.html">Studio</a>
@@ -28,13 +29,21 @@
                     </li>
                 </ul>
             </nav>
-            <ul class="page-header__contacts list">
-                <li><a class="page-header__contacts-mail link" href="mailto:info@devstudio.com">
-                <svg class="page-header__contacts-mail-icon page-header__contacts-mail-icon--envelope">
-                    <use href="./images/sprite.svg#icon-envelope"></use>
+            <button class="mobile-menu__open-btn" type="button">
+                <svg class="mobile-menu__open-btn-icon">
+                    <use href="./images/sprite.svg#icon-menu"></use>
                 </svg>
-                info@devstudio.com</a></li>
-                <li><a class="page-header__contacts-phone link" href="tel:+12127724150">
+            </button>
+            <ul class="page-header__contacts list">
+                <li>
+                    <a class="page-header__contacts-mail link" href="mailto:info@devstudio.com">
+                        <svg class="page-header__contacts-mail-icon page-header__contacts-mail-icon--envelope">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li>
+                    <a class="page-header__contacts-phone link" href="tel:+12127724150">
                         <svg class="page-header__contacts-phone-icon page-header__contacts-phone-icon--smartphone">
                             <use href="./images/sprite.svg#icon-smartphone"></use>
                         </svg>

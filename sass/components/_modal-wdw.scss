@@ -21,8 +21,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
 
     background-color: var(--main-background-color);
@@ -62,4 +62,12 @@
 .modal-wdw__close-btn:hover .modal-wdw__close-icon,
 .modal-wdw__close-btn:focus .modal-wdw__close-icon {
     fill: var(--accent-color);
+}
+
+
+@media screen and (min-width: 1200px) {
+    .modal-wdw {
+        width: 528px;
+        height: 581px;
+    }
 }

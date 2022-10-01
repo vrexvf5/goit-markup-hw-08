@@ -4,22 +4,23 @@ footer {
     background-color: var(--footer-background-color);
 }
 
-.footer-container {
-    display: flex;
-    column-gap: 70px;
-    align-items: baseline;
+.page-footer__address-section {
+    text-align: center;
 }
 
 .page-footer__address-list {
     display: flex;
     flex-direction: column;
-    row-gap: 9px;
+    row-gap: 8px;
+
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .page-footer__address-link {
     font-style: normal;
     line-height: 1.71;
+    text-align: center;
     color: var(--white-text-color);
 
     &:hover,
@@ -43,7 +44,7 @@ footer {
     font-style: normal;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-    
+
     &:hover,
     &:focus {
         color: var(--accent-color);
@@ -56,7 +57,11 @@ footer {
     transition: color var(--transition-dur-and-func);
 }
 
-.footer-social-media__header {
+.page-footer__social-media {
+    text-align: center;
+}
+
+.page-footer__social-media__header {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -64,16 +69,15 @@ footer {
     color: var(--white-text-color);
 }
 
-.footer-social-media--list {
-    margin: 0;
+.page-footer__social-media--list {
     margin-top: 20px;
 }
 
-.footer-social-media--icon {
+.page-footer__social-media--icon {
     fill: #ffffff;
 }
 
-.footer-social-media--link {
+.page-footer__social-media--link {
     fill: var(--white-text-color);
     background-color: rgba(255, 255, 255, 0.1);
 
@@ -83,3 +87,51 @@ footer {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .page-footer__inner-wrapper {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-left: 61px;
+        margin-right: 74px;
+    }
+
+    .page-footer__address-list {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    footer {
+        padding-bottom: 47px;
+    }
+    
+    .page-footer {
+        text-align: left;
+        max-width: 1600px;
+    }
+
+    .page-footer__inner-wrapper {
+        justify-content: start;
+        column-gap: 70px;
+    }
+    
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .page-footer__address-section {
+        width: 231px;
+    }
+
+    .page-footer__address-list {
+        row-gap: 9px;
+    }
+
+    .page-footer__address-section,
+    .page-footer__social-media {
+        text-align: left;
+    }
+}

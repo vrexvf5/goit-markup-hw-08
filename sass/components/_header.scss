@@ -13,8 +13,7 @@
         display: none;
     }
     
-    .page-header__contacts-mail,
-    .page-header__contacts-phone {
+    .page-header__contacts {
         display: none;
     }
 
@@ -96,14 +95,10 @@
     }
 
     .page-header__contacts {
+        display: block;
         margin-left: auto;
     }
     
-    .page-header__contacts-mail,
-    .page-header__contacts-phone {
-        display: block;
-    }
-
     .page-header__contacts-mail-icon,
     .page-header__contacts-phone-icon {
         margin-right: 10px;
@@ -156,7 +151,7 @@
     .current::after {
         content: "";
         position: relative;
-        top: 28px;
+        top: 26px;
         left: 0;
         display: block;
         height: 4px;
@@ -202,6 +197,6 @@
     }
 
     .current::after {
-        top: 30px;
+        top: 31px;
     }
 }

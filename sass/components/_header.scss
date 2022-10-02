@@ -27,6 +27,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        line-height: 0;
     
         width: 40px;
         height: 40px;
@@ -39,7 +40,7 @@
     .mobile-menu__open-btn-icon {
         width: 24px;
         height: 16px;
-        fill: #000000;
+        fill: var(--headers-color);
 
         transition: fill var(--transition-dur-and-func);
 
@@ -51,7 +52,8 @@
 }
 
 @media screen and (min-width: 768px) {
-    .mobile-menu__open-btn {
+    .mobile-menu__open-btn,
+    .mobile-menu {
         display: none;
     }
 

@@ -16,13 +16,14 @@
     pointer-events: none;
 }
 
+
+
 .modal-wdw {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 450px;
-    height: 609px;
     padding: 40px;
 
     background-color: var(--main-background-color);
@@ -30,6 +31,12 @@
     border-radius: 4px;
 
     transition: transform 500ms ease;
+}
+
+@media screen and (max-width: 479px) {
+    .modal-wdw {
+        width: 320px;
+    }
 }
 
 .modal-wdw__close-btn {
@@ -64,10 +71,8 @@
     fill: var(--accent-color);
 }
 
-
 @media screen and (min-width: 1200px) {
     .modal-wdw {
         width: 528px;
-        height: 581px;
     }
 }

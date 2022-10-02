@@ -998,6 +998,7 @@ footer {
 .customers__list {
   display: flex;
   gap: 30px;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0;
 }
@@ -1058,6 +1059,7 @@ footer {
 .filter__buttons-list {
   display: flex;
   column-gap: 8px;
+  row-gap: 15px;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;

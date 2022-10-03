@@ -411,17 +411,12 @@ footer {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-left: 61px;
-    margin-right: 74px;
   }
   .page-footer__address-list {
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  footer {
-    padding-bottom: 47px;
-  }
   .page-footer {
     text-align: left;
     max-width: 1600px;
@@ -528,6 +523,9 @@ footer {
 @media screen and (min-width: 1200px) {
   .subscribe-form {
     text-align: left;
+  }
+  .subscribe-form__title {
+    margin-top: 0;
   }
   .subscribe-form__inner-wrapper {
     display: flex;
@@ -686,7 +684,6 @@ footer {
     letter-spacing: 0.02em;
   }
   .mobile-menu__phone {
-    display: block;
     margin-bottom: 32px;
     margin-top: auto;
   }

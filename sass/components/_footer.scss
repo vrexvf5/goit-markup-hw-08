@@ -92,8 +92,6 @@ footer {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        margin-left: 61px;
-        margin-right: 74px;
     }
 
     .page-footer__address-list {
@@ -102,10 +100,6 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-    footer {
-        padding-bottom: 47px;
-    }
-    
     .page-footer {
         text-align: left;
         max-width: 1600px;
